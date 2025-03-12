@@ -3,6 +3,12 @@ public class Node implements Comparable<Node> {
     private Node left;
     private Node right;
 
+    public Node(Node left, Node right){
+        this.frequency = left.frequency + right.frequency;
+        this.left = left;
+        this.right = right;
+    }
+
     /*
      * TODO
      * The Node class should have two constructors. The first should accept an int frequency and
@@ -12,6 +18,10 @@ public class Node implements Comparable<Node> {
      * 
      * Finally, the Node class should implement getLeftNode() and getRightNode() getter methods.
      */
+
+    public Node(int frequency2) {
+        //TODO Auto-generated constructor stub
+    }
 
     @Override
     public int compareTo(Node n) {
