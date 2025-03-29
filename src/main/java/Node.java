@@ -1,7 +1,7 @@
 public class Node implements Comparable<Node> {
     private int frequency;
-    private Node left;
-    private Node right;
+    Node left;
+    Node right;
 
     public Node(Node left, Node right){
         this.frequency = left.frequency + right.frequency;
@@ -19,8 +19,23 @@ public class Node implements Comparable<Node> {
      * Finally, the Node class should implement getLeftNode() and getRightNode() getter methods.
      */
 
-    public Node(int frequency2) {
+    public Node(int frequency) {
         //TODO Auto-generated constructor stub
+        this.frequency = frequency;
+        this.left = null;
+        this.right = null;
+    }
+    
+    public Node getLeftNode() {
+        return left;
+    }
+
+    public Node getRightNode() {
+        return right;
+    }
+
+    public int getFrequency() {
+        return frequency;
     }
 
     @Override

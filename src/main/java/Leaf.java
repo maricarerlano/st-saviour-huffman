@@ -16,7 +16,7 @@ public class Leaf extends Node {
         this.character = character;
      }
 
-     public char getChracter() {
+     public char getCharacter() {
         return character;
      }
 }
